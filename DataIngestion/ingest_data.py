@@ -26,7 +26,7 @@ class IngestDataFromPath(DataIngestionStratergy):
         try:
 
             df = pd.read_csv(data_path)
-            loggin.info(f"Your data is sucessfully loaded from path : {path}")
+            loggin.info(f"Your data is sucessfully loaded from path : {data_path}")
             return df 
         
         expect Exception as e: 
